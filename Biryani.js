@@ -7,7 +7,7 @@ const OrderState = Object.freeze({
     DRINKS:  Symbol("drinks")
 });
 
-module.exports = class ShwarmaOrder extends Order{
+module.exports = class BiryaniOrder extends Order{
     constructor(){
         super();
         this.stateCur = OrderState.WELCOMING;
