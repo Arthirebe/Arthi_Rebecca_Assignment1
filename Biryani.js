@@ -1,4 +1,4 @@
-const Order = require("./assignment1Order");
+const Order = require("./Order");
 
 const OrderState = Object.freeze({
     WELCOMING:   Symbol("welcoming"),
