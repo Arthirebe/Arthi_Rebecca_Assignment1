@@ -14,20 +14,20 @@ module.exports = class ShwarmaOrder extends Order{
         this.sSize = "";
         this.sToppings = "";
         this.sDrinks = "";
-        this.sItem = "shawarama";
+        this.sItem = "biryani";
     }
     handleInput(sInput){
         let aReturn = [];
         switch(this.stateCur){
             case OrderState.WELCOMING:
                 this.stateCur = OrderState.SIZE;
-                aReturn.push("Welcome to Richard's Shawarma.");
+                aReturn.push("Welcome to Arthi's Biryani Resturant.");
                 aReturn.push("What size would you like?");
                 break;
             case OrderState.SIZE:
                 this.stateCur = OrderState.TOPPINGS
                 this.sSize = sInput;
-                aReturn.push("What toppings would you like?");
+                aReturn.push("What biryani would you like?");
                 break;
             case OrderState.TOPPINGS:
                 this.stateCur = OrderState.DRINKS
